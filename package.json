@@ -2,10 +2,10 @@
   "name": "chaiaurbackend",
   "version": "1.0.0",
   "description": "a baisc app to deply",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [
     "node",
@@ -15,8 +15,12 @@
   "author": "syed bilal ahmed",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "mongoose": "^8.4.4",
+    "nodemon": "^3.1.4"
   },
   "devDependencies": {
     "prettier": "^3.3.2"
